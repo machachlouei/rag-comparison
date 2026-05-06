@@ -15,6 +15,7 @@ dependencies = [
     "llama-index-embeddings-huggingface>=0.3",
     "llama-index-llms-openai>=0.2",
     "llama-index-llms-anthropic>=0.3",
+    "llama-index-retrievers-bm25>=0.4",
 
     # Stores
     "neo4j>=5.20",

@@ -1,5 +1,7 @@
 # RAG Patterns Compared: KG-RAG vs Hybrid RAG vs Agentic RAG
 
+[![CI](https://github.com/machachlouei/rag-comparison/actions/workflows/ci.yml/badge.svg)](https://github.com/machachlouei/rag-comparison/actions/workflows/ci.yml)
+
 An educational repo that builds the **same Q&A system three ways** so you can see, run, and measure the differences.
 
 ## Patterns covered

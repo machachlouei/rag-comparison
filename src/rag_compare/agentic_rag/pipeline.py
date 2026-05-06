@@ -16,7 +16,6 @@ from langchain_core.messages import AnyMessage, HumanMessage
 from langgraph.graph import END, StateGraph
 from langgraph.graph.message import add_messages
 
-from rag_compare.common.llm import get_llm
 from rag_compare.hybrid_rag import HybridRagPipeline
 from rag_compare.kg_rag import KGRagPipeline
 
@@ -42,8 +41,6 @@ class AgenticRagPipeline:
         kg: KGRagPipeline | None = None,
         max_iterations: int = 3,
     ) -> "AgenticRagPipeline":
-        llm = get_llm()
-
         def plan(state: AgentState) -> AgentState:
             # Ask the LLM which tool to call given the question + evidence so far.
             # Implementation: see notebooks/03_agentic_rag_walkthrough.ipynb

@@ -1,11 +1,11 @@
 """Centralized config loaded from .env."""
 
+import os
 from functools import lru_cache
 from pathlib import Path
 
 from dotenv import load_dotenv
 from pydantic import BaseModel, Field
-import os
 
 load_dotenv()
 
