@@ -43,26 +43,35 @@ GOLDEN_QUESTIONS: list[GoldenItem] = [
 
     # --- multi_hop --------------------------------------------------------
     GoldenItem(
-        question="Which AI lab was founded by former OpenAI employees and develops the Claude model?",
+        question=(
+            "Which AI lab was founded by former OpenAI employees and develops the Claude model?"
+        ),
         expected="Anthropic",
         capability="multi_hop",
     ),
     GoldenItem(
         question=(
-            "Who co-founded the lab behind Claude, and what role did they previously hold at OpenAI?"
+            "Who co-founded the lab behind Claude, and what role did they "
+            "previously hold at OpenAI?"
         ),
         expected="Dario Amodei (and Daniela Amodei); Dario was VP of Research at OpenAI.",
         capability="multi_hop",
     ),
     GoldenItem(
-        question="Which deep learning architecture, introduced in a 2017 Google paper, underlies GPT-4, Claude, and Gemini?",
+        question=(
+            "Which deep learning architecture, introduced in a 2017 Google paper, "
+            "underlies GPT-4, Claude, and Gemini?"
+        ),
         expected="The Transformer (introduced in 'Attention Is All You Need').",
         capability="multi_hop",
     ),
 
     # --- exact_term -------------------------------------------------------
     GoldenItem(
-        question="What is the exact title of the 2017 paper that introduced the Transformer architecture?",
+        question=(
+            "What is the exact title of the 2017 paper that introduced "
+            "the Transformer architecture?"
+        ),
         expected="Attention Is All You Need",
         capability="exact_term",
     ),
@@ -79,8 +88,14 @@ GOLDEN_QUESTIONS: list[GoldenItem] = [
 
     # --- aggregation ------------------------------------------------------
     GoldenItem(
-        question="List the major AI labs covered in the corpus that have released a flagship large language model.",
-        expected="OpenAI (GPT-4), Anthropic (Claude), Google DeepMind (Gemini), Meta (Llama), Mistral AI.",
+        question=(
+            "List the major AI labs covered in the corpus that have released "
+            "a flagship large language model."
+        ),
+        expected=(
+            "OpenAI (GPT-4), Anthropic (Claude), Google DeepMind (Gemini), "
+            "Meta (Llama), Mistral AI."
+        ),
         capability="aggregation",
     ),
 

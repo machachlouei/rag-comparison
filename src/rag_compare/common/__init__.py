@@ -1,9 +1,9 @@
+from rag_compare.common.chunking import chunk_documents
 from rag_compare.common.config import Settings, get_settings
 from rag_compare.common.corpus import load_corpus
-from rag_compare.common.llm import get_llm
 from rag_compare.common.embeddings import get_embedder
-from rag_compare.common.chunking import chunk_documents
 from rag_compare.common.fetch_corpus import STARTER_ARTICLES, fetch_starter_corpus
+from rag_compare.common.llm import get_llm
 
 __all__ = [
     "Settings",

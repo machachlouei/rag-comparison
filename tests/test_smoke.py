@@ -15,7 +15,8 @@ def test_common_imports():
         load_corpus,
     )
 
-    assert all(callable(x) for x in [chunk_documents, get_embedder, get_llm, get_settings, load_corpus])
+    callables = [chunk_documents, get_embedder, get_llm, get_settings, load_corpus]
+    assert all(callable(x) for x in callables)
     assert Settings is not None
 
 
